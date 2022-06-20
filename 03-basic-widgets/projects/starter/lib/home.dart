@@ -44,7 +44,11 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: BottomNavigationBar(
         // 5
         selectedItemColor: Theme.of(context).textSelectionTheme.selectionColor,
-        // TODO: Set selected tab bar
+        // 10
+        currentIndex: _selectedIndex,
+// 11
+        onTap: _onItemTapped,
+
         // 6
         items: <BottomNavigationBarItem>[
           const BottomNavigationBarItem(
